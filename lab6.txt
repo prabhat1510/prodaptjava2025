@@ -1,0 +1,23 @@
+title="Welcome to Shell programming"
+subtitle1="Lab excerise to learn iteration using for loop"
+subtitle2="Listing files in current folder"
+dash1="============================"
+dash2="______________________________________________"
+dash3="^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+dash4="~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+clear
+echo $dash1
+echo $title
+echo $dash1
+echo $subtitle1
+echo $dash2
+echo $subtitle2
+echo $dash3
+lstext=`ls `
+for w in $lstext
+do
+   echo $w 
+done
+echo $dash4
+echo  "Print file names from current folder is completed"
+echo $dash4

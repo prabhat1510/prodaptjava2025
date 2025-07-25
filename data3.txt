@@ -1,0 +1,8 @@
+1 atmlog 01042020 11:40:00 started ok user1 txnposted
+0 atmlog 01042020 11:42:00 error failed user2 Notposted
+1 atmlog 01042020 11:42:02 started ok user3 txnposted
+1 atmlog 01042020 11:42:05 started ok user1 txnposted
+0 atmlog 01042020 11:43:20 error failed user3 Notposted
+0 atmlog 01042020 11:45:41 error failed user2 Notposted
+1 atmlog 01042020 11:46:00 started ok user4 txnposted
+1 atmlog 01042020 11:48:00 started ok user1 txnposted

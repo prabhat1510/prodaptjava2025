@@ -1,0 +1,6 @@
+title="welcome to shell scripting"
+subtitle="List files from current folder"
+filelist=`ls `
+echo $title
+echo $subtitle
+echo $filelist

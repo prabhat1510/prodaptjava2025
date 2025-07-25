@@ -1,0 +1,12 @@
+title="Lab 3 : Read a file or header or footer"
+echo $title
+echo "Enter name of the file to read"
+read filename
+echo "Enter the option : cat or head or tail"
+read option
+case $option in
+     cat)  cat $filename ;;
+     head) head $filename ;;
+     tail) tail $filename ;;
+     *) echo "unknown option";;
+esac

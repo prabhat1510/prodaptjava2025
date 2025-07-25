@@ -1,0 +1,15 @@
+title="Welcome to Shell programming"
+dash="============================"
+subtitle="Lab excerise to learn iteration using while loop"
+dash1="````````````````````````````````````````````````"
+echo $title
+echo $dash
+echo $subtitle
+echo $dash1
+number=1
+while [ $number -le 5 ]
+  do
+    echo "Welcome $number times"
+    number=$(($number+1))
+  done
+echo "Completed the while loop $number times"

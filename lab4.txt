@@ -1,0 +1,17 @@
+title="Welcome to Shell programming"
+dash="============================"
+subtitle="Lab excerise to learn conditional statement using if"
+dash="~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+echo $title
+echo $subtitle
+echo "Enter a number "
+read input
+if [ $input -le 10 ]
+   then
+       echo "your input $input is less than or equal to 10"
+   elif [ $input -gt 100 ]
+   then
+       echo "your input $input is greater than 100"
+   else
+       echo "your input $input is between 10 to 100"
+fi
