@@ -1,0 +1,30 @@
+title="Welcome to Shell programming"
+subtitle1="Lab excercise to provide dash board on logs"
+subtitle2="high severity items alone are listed"
+subtitle3="Logic combines-while loop,for loop and if condition"
+dash3="~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+dash0="============================"
+dash1="___________________________________________"
+dash2="^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+dash3="~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+clear
+echo $dash0
+echo $title
+echo $dash0
+echo $subtitle1
+echo $dash1
+while read -r i
+    do
+      for w in $i
+      do 
+        if [ "$w" -eq 0 ] 2>/dev/null ;
+        then 
+           echo "$i is a severity ticket"
+        fi
+    done
+done < data3.txt
+echo $dash2
+echo $subtitle2
+echo $dash2
+echo $dash3
+echo $subtitle3

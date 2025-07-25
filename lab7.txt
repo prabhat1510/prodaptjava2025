@@ -1,0 +1,28 @@
+title="Welcome to Shell programming"
+subtitle1="Lab excercise to read a file and apply logic on data "
+subtitle2="Combine while loop and if condition"
+subtitle3="Important items are highlighted"
+dash1="============================"
+dash2="_____________________________________________________"
+dash3="^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+dash4="~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+clear
+echo $dash1
+echo $title
+echo $dash1
+echo $subtitle1
+echo $dash2
+echo $subtitle2
+echo $dash3
+while read -r i
+do
+   if [ $i -eq 1 ] ;
+      then 
+      echo "$i is a priority item"
+   else
+      echo $i
+   fi
+done < data2.txt 
+echo $dash4
+echo $subtitle3
+echo $dash4

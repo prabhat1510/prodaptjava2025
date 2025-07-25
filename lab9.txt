@@ -1,0 +1,31 @@
+title="Welcome to Shell programming"
+subtitle1="Lab excercise for Addition of two numbers"
+subtitle2="Logic includes function call and expression execution"
+dash3="~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+dash0="============================"
+dash1="^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"
+dash2="~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+clear
+echo $dash0
+echo $title
+echo $dash0
+echo $subtitle1
+echo $dash1
+echo $subtitle2
+echo $dash2
+add()
+  {
+    a=$1
+    b=$2
+    c=`expr $a + $b`
+    echo "Sum of two numbers is $c"
+  }
+while :
+do
+  echo "Control+c to exit" 
+  echo "Enter First Number"
+  read first
+  echo "Enter Second Number"
+  read second
+  add $first $second
+done
