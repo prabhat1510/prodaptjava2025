@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Use Case Example</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/js/bootstrap.min.js">
+    <script src="../src/jsonex.js"></script>
+</head>
+<body>
+    <h1>JSON Use Case Example</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                
+            </div>
+            <div class="col-md-4">
+                <h2>Form Input</h2>
+                <form id="dataForm">
+                    <div class="form-group">        
+                        <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" class="form-control" placeholder="Enter your first name">
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" class="form-control" placeholder="Enter your last name">
+    <button id="submitBtn" class="btn btn-primary mt-2" onclick="submitData()">Submit</button> <button id="dispBtn" class="btn btn-secondary mt-2" onclick="retrieveData(event)">Display JSON Data</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <p>JSON Data:</p>
+                <p id="jsonData" class="bg-light p-3"></p>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
